@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-05T13:41:34.186391" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTest" source="C:\Users\acer\PycharmProjects\OrangeRobotPOM\TestCases\LoginTest.robot">
+<test id="s1-t1" name="Login Test" line="15">
+<kw name="Open my Browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-05T13:41:34.599490" level="INFO">Opening browser 'chrome' to base url 'https://devmini-trials711.orangehrmlive.com'.</msg>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-05T13:41:34.599490" elapsed="9.282604"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-05T13:41:43.884091" elapsed="0.144604"/>
+</kw>
+<arg>${Url}</arg>
+<arg>${B_Type}</arg>
+<status status="PASS" start="2024-02-05T13:41:34.597411" elapsed="9.433962"/>
+</kw>
+<kw name="Enter User Name" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-05T13:41:44.039316" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<arg>${login_UserName}</arg>
+<arg>${UName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T13:41:44.038316" elapsed="0.336004"/>
+</kw>
+<arg>${UserName}</arg>
+<status status="PASS" start="2024-02-05T13:41:44.036050" elapsed="0.339268"/>
+</kw>
+<kw name="Enter User Password" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-05T13:41:44.376317" level="INFO">Typing text 'z@52zrUKFA' into text field 'id:txtPassword'.</msg>
+<arg>${login_Password}</arg>
+<arg>${UPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T13:41:44.376317" elapsed="0.126671"/>
+</kw>
+<arg>${Upw}</arg>
+<status status="PASS" start="2024-02-05T13:41:44.375318" elapsed="0.127670"/>
+</kw>
+<kw name="Click Login Button" owner="LoginKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-05T13:41:44.504060" level="INFO">Clicking button 'xpath://*[@id="frmLogin"]/div[4]/button'.</msg>
+<arg>${login_Button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-05T13:41:44.504060" elapsed="6.204695"/>
+</kw>
+<status status="PASS" start="2024-02-05T13:41:44.504060" elapsed="6.205838"/>
+</kw>
+<kw name="Verify Successfull Login" owner="LoginKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-05T13:41:50.760934" level="INFO">Page title is 'Employee Management'.</msg>
+<arg>Employee Management</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-02-05T13:41:50.712040" elapsed="0.048894"/>
+</kw>
+<status status="PASS" start="2024-02-05T13:41:50.711039" elapsed="0.049895"/>
+</kw>
+<kw name="Close my Browser" owner="LoginKeywords">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-02-05T13:41:50.761905" elapsed="6.379006"/>
+</kw>
+<status status="PASS" start="2024-02-05T13:41:50.761905" elapsed="6.379006"/>
+</kw>
+<status status="PASS" start="2024-02-05T13:41:34.597384" elapsed="22.544570"/>
+</test>
+<status status="PASS" start="2024-02-05T13:41:34.189485" elapsed="22.953467"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
