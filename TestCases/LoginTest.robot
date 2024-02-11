@@ -1,20 +1,21 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../Resources/LoginKeywords.robot
+Variables  ../SystemSettings/SystemUtil.py
 
 
 *** Variables ***
-${Browser}  chrome
-${SiteUrl}  https://devmini-trials711.orangehrmlive.com
-${UName}    Admin
-${UPassword}    z@52zrUKFA
+${B_Type}   ${Browser}
+${Url}  ${SiteUrl}
+${UserName}     ${UName}
+${Upw}  ${UPassword}
 
 
 *** Test Cases ***
 Login Test
-    Open my Browser    ${SiteUrl}   ${Browser}
-    Enter User Name    ${UName}
-    Enter User Password    ${UPassword}
+    Open my Browser    ${Url}   ${B_Type}
+    Enter User Name    ${UserName}
+    Enter User Password    ${Upw}
     Click Login Button
     Verify Successfull Login
     Close my Browser
