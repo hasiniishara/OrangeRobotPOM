@@ -1,6 +1,6 @@
 job_SectionBtn = "xpath://*[@id=\"top_level_menu_item_menu_item_102\"]/a"
 job_TitleBtn = "xpath://*[@id=\"top_level_menu_item_menu_item_102\"]/sub-menu-container/div/div[2]/a"
-job_AddBtn = "xpath://*[@id=\"jobTitlesDiv\"]/div/a/i"
+job_AddBtn = "xpath://*[@id=\"jobTitlesDiv\"]/div/a"
 job_TitleName = "id:jobTitleName"
 job_Description = "id:jobDescription"
 job_Note = "id:note"

@@ -7,6 +7,8 @@ Click Job Section
     click element    ${job_SectionBtn}
 Click Manage Job Titles
     click element    ${job_TitleBtn}
+Wait For Add Job Button
+    Wait Until Element Is Visible    ${job_AddBtn}    timeout=20s
 Click New Job Title Add Button
     click button    ${job_AddBtn}
 Add New Job Title Details

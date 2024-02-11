@@ -1,82 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-05T13:41:34.186391" rpa="false" schemaversion="5">
-<suite id="s1" name="LoginTest" source="C:\Users\acer\PycharmProjects\OrangeRobotPOM\TestCases\LoginTest.robot">
-<test id="s1-t1" name="Login Test" line="15">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-11T20:08:52.469709" rpa="false" schemaversion="5">
+<suite id="s1" name="AdminTest" source="C:\Users\acer\PycharmProjects\OrangeRobotPOM\TestCases\AdminTest.robot">
+<test id="s1-t1" name="Login Test" line="18">
 <kw name="Open my Browser" owner="LoginKeywords">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:41:34.599490" level="INFO">Opening browser 'chrome' to base url 'https://devmini-trials711.orangehrmlive.com'.</msg>
+<msg time="2024-02-11T20:08:52.871818" level="INFO">Opening browser 'chrome' to base url 'https://devmini-trials711.orangehrmlive.com'.</msg>
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-05T13:41:34.599490" elapsed="9.282604"/>
+<status status="PASS" start="2024-02-11T20:08:52.870740" elapsed="8.772657"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-05T13:41:43.884091" elapsed="0.144604"/>
+<status status="PASS" start="2024-02-11T20:09:01.647863" elapsed="0.208171"/>
 </kw>
 <arg>${Url}</arg>
 <arg>${B_Type}</arg>
-<status status="PASS" start="2024-02-05T13:41:34.597411" elapsed="9.433962"/>
+<status status="PASS" start="2024-02-11T20:08:52.869719" elapsed="8.987317"/>
 </kw>
 <kw name="Enter User Name" owner="LoginKeywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:41:44.039316" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
+<msg time="2024-02-11T20:09:01.863681" level="INFO">Typing text 'Admin' into text field 'id:txtUsername'.</msg>
 <arg>${login_UserName}</arg>
 <arg>${UName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:41:44.038316" elapsed="0.336004"/>
+<status status="PASS" start="2024-02-11T20:09:01.861396" elapsed="0.233425"/>
 </kw>
 <arg>${UserName}</arg>
-<status status="PASS" start="2024-02-05T13:41:44.036050" elapsed="0.339268"/>
+<status status="PASS" start="2024-02-11T20:09:01.860320" elapsed="0.234501"/>
 </kw>
 <kw name="Enter User Password" owner="LoginKeywords">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:41:44.376317" level="INFO">Typing text 'z@52zrUKFA' into text field 'id:txtPassword'.</msg>
+<msg time="2024-02-11T20:09:02.095877" level="INFO">Typing text 'z@52zrUKFA' into text field 'id:txtPassword'.</msg>
 <arg>${login_Password}</arg>
 <arg>${UPassword}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:41:44.376317" elapsed="0.126671"/>
+<status status="PASS" start="2024-02-11T20:09:02.095877" elapsed="0.112017"/>
 </kw>
 <arg>${Upw}</arg>
-<status status="PASS" start="2024-02-05T13:41:44.375318" elapsed="0.127670"/>
+<status status="PASS" start="2024-02-11T20:09:02.095877" elapsed="0.112017"/>
 </kw>
 <kw name="Click Login Button" owner="LoginKeywords">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:41:44.504060" level="INFO">Clicking button 'xpath://*[@id="frmLogin"]/div[4]/button'.</msg>
+<msg time="2024-02-11T20:09:02.209028" level="INFO">Clicking button 'xpath://*[@id="frmLogin"]/div[4]/button'.</msg>
 <arg>${login_Button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-05T13:41:44.504060" elapsed="6.204695"/>
+<status status="PASS" start="2024-02-11T20:09:02.209028" elapsed="6.536615"/>
 </kw>
-<status status="PASS" start="2024-02-05T13:41:44.504060" elapsed="6.205838"/>
+<status status="PASS" start="2024-02-11T20:09:02.208920" elapsed="6.536723"/>
 </kw>
 <kw name="Verify Successfull Login" owner="LoginKeywords">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-02-05T13:41:50.760934" level="INFO">Page title is 'Employee Management'.</msg>
+<msg time="2024-02-11T20:09:08.758918" level="INFO">Page title is 'Employee Management'.</msg>
 <arg>Employee Management</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-02-05T13:41:50.712040" elapsed="0.048894"/>
+<status status="PASS" start="2024-02-11T20:09:08.746638" elapsed="0.012280"/>
 </kw>
-<status status="PASS" start="2024-02-05T13:41:50.711039" elapsed="0.049895"/>
+<status status="PASS" start="2024-02-11T20:09:08.746638" elapsed="0.012280"/>
 </kw>
-<kw name="Close my Browser" owner="LoginKeywords">
+<status status="PASS" start="2024-02-11T20:08:52.868721" elapsed="15.891217"/>
+</test>
+<test id="s1-t2" name="Check Dashboard" line="24">
+<kw name="Verify Successfull Dashboard Loading" owner="DashBoardKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-02-11T20:09:08.768405" level="INFO">Page title is 'Employee Management'.</msg>
+<arg>Employee Management</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-02-11T20:09:08.762118" elapsed="0.006287"/>
+</kw>
+<status status="PASS" start="2024-02-11T20:09:08.761008" elapsed="0.008395"/>
+</kw>
+<status status="PASS" start="2024-02-11T20:09:08.761008" elapsed="0.008395"/>
+</test>
+<test id="s1-t3" name="Access Admin Module" line="26">
+<kw name="Click Admin Module" owner="DashBoardKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-11T20:09:08.771418" level="INFO">Clicking element 'xpath://*[@id="menu_item_101"]/span'.</msg>
+<arg>${dash_AdminIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-11T20:09:08.771418" elapsed="0.146922"/>
+</kw>
+<status status="PASS" start="2024-02-11T20:09:08.770420" elapsed="0.147920"/>
+</kw>
+<status status="PASS" start="2024-02-11T20:09:08.770420" elapsed="0.148944"/>
+</test>
+<test id="s1-t4" name="Add New Job Title to the System" line="28">
+<kw name="Click Job Section" owner="AdminKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-11T20:09:08.922332" level="INFO">Clicking element 'xpath://*[@id="top_level_menu_item_menu_item_102"]/a'.</msg>
+<arg>${job_SectionBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-11T20:09:08.921335" elapsed="0.132224"/>
+</kw>
+<status status="PASS" start="2024-02-11T20:09:08.921335" elapsed="0.132224"/>
+</kw>
+<kw name="Click Manage Job Titles" owner="AdminKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-11T20:09:09.055530" level="INFO">Clicking element 'xpath://*[@id="top_level_menu_item_menu_item_102"]/sub-menu-container/div/div[2]/a'.</msg>
+<arg>${job_TitleBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-11T20:09:09.054571" elapsed="0.310628"/>
+</kw>
+<status status="PASS" start="2024-02-11T20:09:09.054571" elapsed="0.310628"/>
+</kw>
+<kw name="Wait For Add Job Button" owner="AdminKeywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${job_AddBtn}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-11T20:09:09.366197" elapsed="1.640738"/>
+</kw>
+<status status="PASS" start="2024-02-11T20:09:09.366197" elapsed="1.640738"/>
+</kw>
+<kw name="Click New Job Title Add Button" owner="AdminKeywords">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-11T20:09:11.008010" level="INFO">Clicking button 'xpath://*[@id="jobTitlesDiv"]/div/a'.</msg>
+<msg time="2024-02-11T20:09:11.142319" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-11T20:09:11.142319" level="FAIL">Button with locator 'xpath://*[@id="jobTitlesDiv"]/div/a' not found.</msg>
+<arg>${job_AddBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-02-11T20:09:11.008010" elapsed="0.143967">Button with locator 'xpath://*[@id="jobTitlesDiv"]/div/a' not found.</status>
+</kw>
+<status status="FAIL" start="2024-02-11T20:09:11.008010" elapsed="0.143967">Button with locator 'xpath://*[@id="jobTitlesDiv"]/div/a' not found.</status>
+</kw>
+<kw name="Add New Job Title Details" owner="AdminKeywords">
+<arg>${Job_Name} ${Job_Des}</arg>
+<arg>${Job_Note}</arg>
+<status status="NOT RUN" start="2024-02-11T20:09:11.152975" elapsed="0.000000"/>
+</kw>
+<kw name="Save New Job Title Details" owner="AdminKeywords">
+<status status="NOT RUN" start="2024-02-11T20:09:11.152975" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-02-11T20:09:08.920336" elapsed="2.233670">Button with locator 'xpath://*[@id="jobTitlesDiv"]/div/a' not found.</status>
+</test>
+<test id="s1-t5" name="Close the Browser" line="35">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-02-05T13:41:50.761905" elapsed="6.379006"/>
+<status status="PASS" start="2024-02-11T20:09:11.156020" elapsed="6.267786"/>
 </kw>
-<status status="PASS" start="2024-02-05T13:41:50.761905" elapsed="6.379006"/>
-</kw>
-<status status="PASS" start="2024-02-05T13:41:34.597384" elapsed="22.544570"/>
+<status status="PASS" start="2024-02-11T20:09:11.155003" elapsed="6.269801"/>
 </test>
-<status status="PASS" start="2024-02-05T13:41:34.189485" elapsed="22.953467"/>
+<status status="FAIL" start="2024-02-11T20:08:52.472744" elapsed="24.953131"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+<stat pass="4" fail="1" skip="0" id="s1" name="AdminTest">AdminTest</stat>
 </suite>
 </statistics>
 <errors>
