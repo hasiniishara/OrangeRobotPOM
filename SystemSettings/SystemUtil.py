@@ -1,10 +1,10 @@
 # Browser Details
 Browser = "chrome"
-SiteUrl = "https://devmini-trials711.orangehrmlive.com"
+SiteUrl = "https://devminitest-trials711.orangehrmlive.com"
 
 # User Details
 UName = "Admin"
-UPassword = "z@52zrUKFA"
+UPassword = "hR@Ew7e4JS"
 
 # Adding New Job Details
 JobTitle = "HasQA4"
