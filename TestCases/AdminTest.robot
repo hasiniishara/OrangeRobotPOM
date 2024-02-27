@@ -29,7 +29,7 @@ Add New Job Title to the System
     Click Job Section
     Click Manage Job Titles
     Wait For Add Job Button
-   # Click New Job Title Add Button
+    Click New Job Title Add Button
   #  Add New Job Title Details   ${Job_Name} ${Job_Des}  ${Job_Note}
   #  Save New Job Title Details
 Close the Browser

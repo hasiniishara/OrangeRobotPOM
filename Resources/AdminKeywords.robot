@@ -8,9 +8,11 @@ Click Job Section
 Click Manage Job Titles
     click element    ${job_TitleBtn}
 Wait For Add Job Button
-    Wait Until Element Is Visible    ${job_AddBtn}    timeout=20s
+    Wait Until Element Is Visible    ${job_AddBtn}    timeout=40s
 Click New Job Title Add Button
-    click button    ${job_AddBtn}
+    mouse over    ${job_AddBtn}
+    sleep    2s
+    click element    ${job_AddBtn}
 Add New Job Title Details
     [Arguments]    ${JobName}   ${JobDescription}   ${JobNote}
     input text    ${job_TitleName}  ${JobName}
